@@ -1,7 +1,6 @@
 package dev.kkrow.calorietracker.ui.dashboard
 
 import android.app.Activity
-import android.content.res.Configuration
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -114,23 +113,8 @@ class DashboardFragment : Fragment() {
             val currentTag = AppLanguageManager.getCurrentLanguageTag(requireContext())
             if (!option.tag.equals(currentTag, ignoreCase = true)) {
                 AppLanguageManager.setLanguage(requireContext(), option.tag)
-                showLanguageUpdatedToast(option.tag)
-                activity?.let { host ->
-                    if (!host.isFinishing && !host.isDestroyed) {
-                        host.recreate()
-                    }
-                }
             }
         }
-    }
-
-    private fun showLanguageUpdatedToast(languageTag: String) {
-        val baseContext = context ?: return
-        val config = Configuration(baseContext.resources.configuration)
-        config.setLocale(Locale.forLanguageTag(languageTag))
-        val localizedContext = baseContext.createConfigurationContext(config)
-        val text = localizedContext.getString(R.string.language_saved)
-        Toast.makeText(baseContext.applicationContext, text, Toast.LENGTH_SHORT).show()
     }
 
     private fun loadLimit() {
