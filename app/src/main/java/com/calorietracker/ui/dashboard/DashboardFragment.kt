@@ -115,16 +115,22 @@ class DashboardFragment : Fragment() {
             if (!option.tag.equals(currentTag, ignoreCase = true)) {
                 AppLanguageManager.setLanguage(requireContext(), option.tag)
                 showLanguageUpdatedToast(option.tag)
-                requireActivity().recreate()
+                activity?.let { host ->
+                    if (!host.isFinishing && !host.isDestroyed) {
+                        host.recreate()
+                    }
+                }
             }
         }
     }
 
     private fun showLanguageUpdatedToast(languageTag: String) {
-        val config = Configuration(requireContext().resources.configuration)
+        val baseContext = context ?: return
+        val config = Configuration(baseContext.resources.configuration)
         config.setLocale(Locale.forLanguageTag(languageTag))
-        val localizedContext = requireContext().createConfigurationContext(config)
-        Toast.makeText(localizedContext, localizedContext.getString(R.string.language_saved), Toast.LENGTH_SHORT).show()
+        val localizedContext = baseContext.createConfigurationContext(config)
+        val text = localizedContext.getString(R.string.language_saved)
+        Toast.makeText(baseContext.applicationContext, text, Toast.LENGTH_SHORT).show()
     }
 
     private fun loadLimit() {
