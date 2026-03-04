@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Calorie Tracker</string>
+    <string name="title_home">Tracker</string>
+    <string name="title_dashboard">Settings</string>
+
+    <string name="date_previous">Previous day</string>
+    <string name="date_next">Next day</string>
+    <string name="remaining_calories">Remaining</string>
+    <string name="day_total">Day total: %1$d kcal</string>
+    <string name="day_consumed">Consumed: %1$d kcal</string>
+    <string name="day_burned">Burned: %1$d kcal</string>
+    <string name="calories_per_100_hint">kcal per 100 g</string>
+    <string name="grams_consumed_hint">Consumed grams</string>
+    <string name="workout_calories_hint">Burned kilocalories</string>
+    <string name="preview_calories">Preview: %1$d kcal</string>
+    <string name="mode_food">Food</string>
+    <string name="mode_workout">Workout</string>
+    <string name="add_entry">Add</string>
+    <string name="pick_date">Pick date</string>
+    <string name="no_records_for_date">No records for this date</string>
+    <string name="invalid_number">Enter a valid number</string>
+    <string name="invalid_preview_values">Enter valid values in both fields</string>
+
+    <string name="daily_limit">Daily kcal limit</string>
+    <string name="language_label">Language</string>
+    <string name="language_saved">Language updated</string>
+    <string name="save_limit">Save limit</string>
+    <string name="export_data">Export history</string>
+    <string name="import_data">Import history</string>
+    <string name="saved">Saved</string>
+    <string name="import_success">Import completed</string>
+    <string name="import_error">Failed to import file</string>
+    <string name="export_success">Export completed</string>
+    <string name="export_error">Failed to export file</string>
+    <string name="import_json">Import JSON</string>
+</resources>

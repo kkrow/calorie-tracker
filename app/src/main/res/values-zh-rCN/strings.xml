@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Calorie Tracker</string>
+    <string name="title_home">记录</string>
+    <string name="title_dashboard">设置</string>
+    <string name="date_previous">前一天</string>
+    <string name="date_next">后一天</string>
+    <string name="remaining_calories">剩余</string>
+    <string name="day_total">当日总计：%1$d kcal</string>
+    <string name="day_consumed">摄入：%1$d kcal</string>
+    <string name="day_burned">消耗：%1$d kcal</string>
+    <string name="calories_per_100_hint">每100克千卡</string>
+    <string name="grams_consumed_hint">摄入克数</string>
+    <string name="workout_calories_hint">消耗千卡</string>
+    <string name="preview_calories">预览：%1$d kcal</string>
+    <string name="mode_food">饮食</string>
+    <string name="mode_workout">训练</string>
+    <string name="add_entry">添加</string>
+    <string name="pick_date">选择日期</string>
+    <string name="no_records_for_date">该日期没有记录</string>
+    <string name="invalid_number">请输入有效数字</string>
+    <string name="invalid_preview_values">请在两个字段输入有效值</string>
+    <string name="daily_limit">每日kcal上限</string>
+    <string name="language_label">语言</string>
+    <string name="language_saved">语言已更新</string>
+    <string name="save_limit">保存上限</string>
+    <string name="export_data">导出历史</string>
+    <string name="import_data">导入历史</string>
+    <string name="saved">已保存</string>
+    <string name="import_success">导入完成</string>
+    <string name="import_error">导入文件失败</string>
+    <string name="export_success">导出完成</string>
+    <string name="export_error">导出文件失败</string>
+    <string name="import_json">导入 JSON</string>
+</resources>

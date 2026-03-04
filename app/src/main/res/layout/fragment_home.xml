@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="always"
+    android:clipToPadding="false"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="28dp"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/layoutDateSwitcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonPrevDate"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/date_previous"
+                android:src="@android:drawable/ic_media_previous" />
+
+            <TextView
+                android:id="@+id/textSelectedDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                tools:text="3 мар 2026" />
+
+            <ImageButton
+                android:id="@+id/buttonNextDate"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/date_next"
+                android:src="@android:drawable/ic_media_next" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/layoutProgress"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progressCalories"
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                android:layout_gravity="center"
+                android:indeterminate="false"
+                app:indicatorSize="226dp"
+                app:trackThickness="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remaining_calories"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textRemainingValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="56sp"
+                    android:textStyle="bold"
+                    tools:text="1450" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textDayTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            tools:text="Итого за день: 550 ккал" />
+
+        <TextView
+            android:id="@+id/textDayConsumed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            tools:text="Съедено: 1300 ккал" />
+
+        <TextView
+            android:id="@+id/textDayBurned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            tools:text="Сожжено: 450 ккал" />
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggleEntryMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:checkedButton="@id/buttonModeFood"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonModeFood"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mode_food" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonModeWorkout"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mode_workout" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <TextView
+            android:id="@+id/textPreviewCalories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Предпросмотр: 325 ккал" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutInputCaloriesPer100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputCaloriesPer100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/calories_per_100_hint"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutInputGrams"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputGrams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/grams_consumed_hint"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutInputWorkoutCalories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputWorkoutCalories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/workout_calories_hint"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonAddEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/add_entry" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

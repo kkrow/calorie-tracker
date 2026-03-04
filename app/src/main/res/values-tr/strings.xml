@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Calorie Tracker</string>
+    <string name="title_home">Takip</string>
+    <string name="title_dashboard">Ayarlar</string>
+    <string name="date_previous">Önceki gün</string>
+    <string name="date_next">Sonraki gün</string>
+    <string name="remaining_calories">Kalan</string>
+    <string name="day_total">Gün toplamı: %1$d kcal</string>
+    <string name="day_consumed">Alınan: %1$d kcal</string>
+    <string name="day_burned">Yakılan: %1$d kcal</string>
+    <string name="calories_per_100_hint">100 g başına kcal</string>
+    <string name="grams_consumed_hint">Tüketilen gram</string>
+    <string name="workout_calories_hint">Yakılan kilokalori</string>
+    <string name="preview_calories">Önizleme: %1$d kcal</string>
+    <string name="mode_food">Yemek</string>
+    <string name="mode_workout">Antrenman</string>
+    <string name="add_entry">Ekle</string>
+    <string name="pick_date">Tarih seç</string>
+    <string name="no_records_for_date">Bu tarih için kayıt yok</string>
+    <string name="invalid_number">Geçerli bir sayı girin</string>
+    <string name="invalid_preview_values">Her iki alana da geçerli değer girin</string>
+    <string name="daily_limit">Günlük kcal limiti</string>
+    <string name="language_label">Dil</string>
+    <string name="language_saved">Dil güncellendi</string>
+    <string name="save_limit">Limiti kaydet</string>
+    <string name="export_data">Geçmişi dışa aktar</string>
+    <string name="import_data">Geçmişi içe aktar</string>
+    <string name="saved">Kaydedildi</string>
+    <string name="import_success">İçe aktarma tamamlandı</string>
+    <string name="import_error">Dosya içe aktarılamadı</string>
+    <string name="export_success">Dışa aktarma tamamlandı</string>
+    <string name="export_error">Dosya dışa aktarılamadı</string>
+    <string name="import_json">JSON içe aktar</string>
+</resources>

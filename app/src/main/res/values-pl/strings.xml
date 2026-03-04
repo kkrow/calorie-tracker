@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Calorie Tracker</string>
+    <string name="title_home">Tracker</string>
+    <string name="title_dashboard">Ustawienia</string>
+    <string name="date_previous">Poprzedni dzień</string>
+    <string name="date_next">Następny dzień</string>
+    <string name="remaining_calories">Pozostało</string>
+    <string name="day_total">Suma dnia: %1$d kcal</string>
+    <string name="day_consumed">Spożyte: %1$d kcal</string>
+    <string name="day_burned">Spalone: %1$d kcal</string>
+    <string name="calories_per_100_hint">kcal na 100 g</string>
+    <string name="grams_consumed_hint">Spożyte gramy</string>
+    <string name="workout_calories_hint">Spalone kilokalorie</string>
+    <string name="preview_calories">Podgląd: %1$d kcal</string>
+    <string name="mode_food">Jedzenie</string>
+    <string name="mode_workout">Trening</string>
+    <string name="add_entry">Dodaj</string>
+    <string name="pick_date">Wybierz datę</string>
+    <string name="no_records_for_date">Brak wpisów dla tej daty</string>
+    <string name="invalid_number">Wpisz poprawną liczbę</string>
+    <string name="invalid_preview_values">Wpisz poprawne wartości w obu polach</string>
+    <string name="daily_limit">Dzienny limit kcal</string>
+    <string name="language_label">Język</string>
+    <string name="language_saved">Zaktualizowano język</string>
+    <string name="save_limit">Zapisz limit</string>
+    <string name="export_data">Eksportuj historię</string>
+    <string name="import_data">Importuj historię</string>
+    <string name="saved">Zapisano</string>
+    <string name="import_success">Import zakończony</string>
+    <string name="import_error">Nie udało się zaimportować pliku</string>
+    <string name="export_success">Eksport zakończony</string>
+    <string name="export_error">Nie udało się wyeksportować pliku</string>
+    <string name="import_json">Importuj JSON</string>
+</resources>

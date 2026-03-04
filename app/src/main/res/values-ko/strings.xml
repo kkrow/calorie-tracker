@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Calorie Tracker</string>
+    <string name="title_home">트래커</string>
+    <string name="title_dashboard">설정</string>
+    <string name="date_previous">이전 날</string>
+    <string name="date_next">다음 날</string>
+    <string name="remaining_calories">남은 칼로리</string>
+    <string name="day_total">오늘 합계: %1$d kcal</string>
+    <string name="day_consumed">섭취: %1$d kcal</string>
+    <string name="day_burned">소모: %1$d kcal</string>
+    <string name="calories_per_100_hint">100g당 kcal</string>
+    <string name="grams_consumed_hint">섭취 그램</string>
+    <string name="workout_calories_hint">소모 킬로칼로리</string>
+    <string name="preview_calories">미리보기: %1$d kcal</string>
+    <string name="mode_food">식사</string>
+    <string name="mode_workout">운동</string>
+    <string name="add_entry">추가</string>
+    <string name="pick_date">날짜 선택</string>
+    <string name="no_records_for_date">해당 날짜의 기록이 없습니다</string>
+    <string name="invalid_number">올바른 숫자를 입력하세요</string>
+    <string name="invalid_preview_values">두 필드 모두 올바른 값을 입력하세요</string>
+    <string name="daily_limit">일일 kcal 제한</string>
+    <string name="language_label">언어</string>
+    <string name="language_saved">언어가 업데이트되었습니다</string>
+    <string name="save_limit">제한 저장</string>
+    <string name="export_data">기록 내보내기</string>
+    <string name="import_data">기록 가져오기</string>
+    <string name="saved">저장됨</string>
+    <string name="import_success">가져오기 완료</string>
+    <string name="import_error">파일 가져오기에 실패했습니다</string>
+    <string name="export_success">내보내기 완료</string>
+    <string name="export_error">파일 내보내기에 실패했습니다</string>
+    <string name="import_json">JSON 가져오기</string>
+</resources>

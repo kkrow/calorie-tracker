@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Calorie Tracker</string>
+    <string name="title_home">Трекер</string>
+    <string name="title_dashboard">Настройки</string>
+
+    <string name="date_previous">Предыдущий день</string>
+    <string name="date_next">Следующий день</string>
+    <string name="remaining_calories">Осталось</string>
+    <string name="day_total">Итого за день: %1$d ккал</string>
+    <string name="day_consumed">Съедено: %1$d ккал</string>
+    <string name="day_burned">Сожжено: %1$d ккал</string>
+    <string name="calories_per_100_hint">Ккал на 100 г</string>
+    <string name="grams_consumed_hint">Съедено грамм</string>
+    <string name="workout_calories_hint">Сожжено килокалорий</string>
+    <string name="preview_calories">Предпросмотр: %1$d ккал</string>
+    <string name="mode_food">Еда</string>
+    <string name="mode_workout">Тренировка</string>
+    <string name="add_entry">Добавить</string>
+    <string name="pick_date">Выбрать дату</string>
+    <string name="no_records_for_date">Для этой даты нет записей</string>
+    <string name="invalid_number">Введите целое число</string>
+    <string name="invalid_preview_values">Введите корректные значения в оба поля</string>
+
+    <string name="daily_limit">Лимит ккал в день</string>
+    <string name="language_label">Язык</string>
+    <string name="language_saved">Язык обновлен</string>
+    <string name="save_limit">Сохранить лимит</string>
+    <string name="export_data">Экспорт истории</string>
+    <string name="import_data">Импорт истории</string>
+    <string name="saved">Сохранено</string>
+    <string name="import_success">Импорт выполнен</string>
+    <string name="import_error">Не удалось импортировать файл</string>
+    <string name="export_success">Экспорт выполнен</string>
+    <string name="export_error">Не удалось экспортировать файл</string>
+    <string name="import_json">Импорт JSON</string>
+</resources>
